@@ -17,4 +17,4 @@
 *.RTF	 diff=astextplain
 
 
-www/ linguist-vendored
+www/* linguist-vendored
