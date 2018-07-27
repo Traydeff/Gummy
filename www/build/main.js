@@ -71,11 +71,12 @@ var HomePage = /** @class */ (function () {
             subTitle: 'Fullname: ' + user.fullName + ' | Username: ' + user.userName + ' | User key: ' + user.key,
             buttons: ['Ok']
         }).present();
+        console.log(user);
     };
     HomePage.prototype.generateKey = function () {
         var text = "";
         var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-        for (var i = 0; i < 5; i++)
+        for (var i = 0; i < 15; i++)
             text += possible.charAt(Math.floor(Math.random() * possible.length));
         text += new Date().getTime();
         return Object(__WEBPACK_IMPORTED_MODULE_3_js_sha256__["sha256"])(text);

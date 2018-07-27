@@ -24,6 +24,8 @@ export class HomePage {
       subTitle: 'Fullname: ' + user.fullName + ' | Username: ' + user.userName + ' | User key: ' + user.key,
       buttons: ['Ok']
     }).present();
+
+    console.log(user);
   }
 
   generateKey()
@@ -31,7 +33,7 @@ export class HomePage {
     var text = "";
     var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   
-    for (var i = 0; i < 5; i++)
+    for (var i = 0; i < 15; i++)
       text += possible.charAt(Math.floor(Math.random() * possible.length));
 
     text += new Date().getTime();
