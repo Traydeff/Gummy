@@ -1,0 +1,6 @@
+{
+  "appId": "com.d.d",
+  "appName": "Gummy",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
