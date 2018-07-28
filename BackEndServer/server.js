@@ -6,6 +6,7 @@ var sha256 = require('js-sha256');
 
 var PORT = 7070;
 
+// This is required in order to let client send request to the server, otherwise returns error
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header('Access-Control-Allow-Methods', 'DELETE, PUT');
@@ -17,6 +18,7 @@ server.listen(PORT);
 
 console.log("listening on " + PORT);
 
+// Get "/" means what happens if we send request to index page
 app.get("/", function(req, res){
     console.log("Got new request");
 
